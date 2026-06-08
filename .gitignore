@@ -1,0 +1,5 @@
+audios/*
+!audios/.gitkeep
+
+__pycache__/
+*.py[cod]
