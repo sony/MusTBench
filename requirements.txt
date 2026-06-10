@@ -1,0 +1,23 @@
+# Install inside a Python 3.10 conda environment.
+# CUDA 12.8 PyTorch wheels; ffmpeg must be installed separately with conda.
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+# Qwen2.5-Omni inference
+torch==2.9.0
+torchvision==0.24.0
+transformers==4.57.1
+accelerate==1.10.1
+safetensors==0.6.2
+sentencepiece==0.2.1
+pillow==11.3.0
+
+# MusTBench parquet data
+numpy==2.2.6
+pandas==2.3.3
+pyarrow==22.0.0
+
+# Audio decoding and CLAPScore evaluation
+scipy==1.15.3
+scikit-learn==1.7.2
+librosa==0.11.0
+soundfile==0.13.1

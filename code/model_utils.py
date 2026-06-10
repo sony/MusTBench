@@ -149,12 +149,8 @@ def generate_texts(
 ) -> List[Tuple[str, Optional[int]]]:
     base_kwargs = generation_kwargs(args)
     candidates = [
-        {**base_kwargs, "use_audio_in_video": False, "return_audio": False},
         {**base_kwargs, "use_audio_in_video": False},
         dict(base_kwargs),
-        {**generation_kwargs(args, use_thinker_prefix=True), "use_audio_in_video": False, "return_audio": False},
-        {**generation_kwargs(args, use_thinker_prefix=True), "use_audio_in_video": False},
-        generation_kwargs(args, use_thinker_prefix=True),
     ]
 
     last_exc: Optional[Exception] = None

@@ -40,22 +40,19 @@ git clone https://github.com/wqysony/MusTBench.git
 cd MusTBench
 ```
 
-Create a Python environment:
+Create a Python 3.10 conda environment with `ffmpeg`, then install the pinned
+CUDA 12.8 Python dependencies:
 
 ```bash
-conda create -n mustbench python=3.10 -y
+conda create -n mustbench -c conda-forge python=3.10 pip ffmpeg -y
 conda activate mustbench
-```
-
-Install a PyTorch build compatible with the CUDA version on your system, then
-install the remaining dependencies:
-
-```bash
-pip install pandas pyarrow datasets accelerate transformers librosa soundfile
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
 The inference code was tested with Python 3.10, PyTorch 2.9.0, Transformers
-4.57.1, and Accelerate 1.10.1. `ffmpeg` is recommended for audio decoding.
+4.57.1, Accelerate 1.10.1, and CUDA 12.8 wheels. A recent NVIDIA driver
+compatible with CUDA 12.8 is required for GPU inference and CLAP evaluation.
 
 ## Benchmark Data
 
