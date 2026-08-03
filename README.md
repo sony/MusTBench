@@ -7,7 +7,7 @@
   <a href="https://daeyongkwon98.github.io/mustbench">
     <img src="https://img.shields.io/badge/Project-Website-4285F4.svg?logo=googlechrome&logoColor=white" alt="Project website">
   </a>
-  <a href="https://huggingface.co/datasets/wqysony/mustbench">
+  <a href="">
     <img src="https://img.shields.io/badge/%F0%9F%A4%97-Dataset-FFD21E.svg" alt="Hugging Face dataset">
   </a>
 </p>
@@ -36,7 +36,7 @@ tracks** and consists of five tasks:
 Clone the repository:
 
 ```bash
-git clone https://github.com/wqysony/MusTBench.git
+git clone https://github.com/sony/MusTBench.git
 cd MusTBench
 ```
 
@@ -92,13 +92,15 @@ tsg = benchmark[benchmark["task"] == "TSG"]
 
 ### Load from Hugging Face
 
-```python
+TBD
+
+<!-- ```python
 from datasets import load_dataset
 
-dataset = load_dataset("wqysony/mustbench", split="test")
+dataset = load_dataset("qiyuwww/mustbench", split="test")
 print(dataset)
 print(dataset[0])
-```
+``` -->
 
 ## Source Audio
 
