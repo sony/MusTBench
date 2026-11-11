@@ -7,9 +7,6 @@
   <a href="https://daeyongkwon98.github.io/mustbench">
     <img src="https://img.shields.io/badge/Project-Website-4285F4.svg?logo=googlechrome&logoColor=white" alt="Project website">
   </a>
-  <a href="">
-    <img src="https://img.shields.io/badge/%F0%9F%A4%97-Dataset-FFD21E.svg" alt="Hugging Face dataset">
-  </a>
 </p>
 
 <p align="center">
